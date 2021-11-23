@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- node
+sudo: false
+script:
+- npm test
+deploy:
+  provider: heroku
+  api_key:
+    secure: cGjRvecouz8F+G+JySp1roX+JtyiM8wvNLf8cX3h7ZsZT6COKKzJoNMfNMDhplKIQDw1YjAlQBhkGVint5ctazB/d/e/cIy+eHAg2XrqC23TazE+qJ5rHj2iy/mxCkaNR03t2+4nkpl0crGZK7sSqbdJhgsHSGLAHOIpjYDrMcqUPHoKL0wPLRaDZPznGTUoK/OHb1y+OzlbGbmuTqrsd0lq3pPSINKe3exr+2xJTh/tfGRCT5tThTsqAesuq9kyAljxnwuNlCM7mStwRFwPElc7srsA5K978z1MI49FPGjlz6DPU1olX6Ip3ydGI89OD33VdZ4mX3D+8I69S6lknImdR/4E22bgJCPl8etFfEekZIxsby57W0Ykpi9C1bSRIYKtwiqnjbK1/PCg8KeOWEW9Hw148S7pDb38TSbI/+ZT2iAP57CCFjBnBEl6czfgv1Mcoh7TzYre5aJyvMC0rSewWjOa0WwZHs5UDe2oOsG4kbQYcmPBkSF9rTW+VhI0Y4rJiWYsrOfYhW3kRYyk5LXFH2F4kNRp3TMnSnga2xurlDKpufkK5K20exqPYAToYcVwvyy7z/76WMQ9Lqwb4qS74Qs32VGhrVqp5VPT8SmfGp81j4tNo/s7w0LzNOT5YEtgOxWF/pHrfh7KiHB2PRwNiMrokJWHMrQ2IFQMRr8=
+  app: tony-devops
+  edge: true
