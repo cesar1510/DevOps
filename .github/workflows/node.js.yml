@@ -9,9 +9,9 @@ on:
   pull_request:
     branches: [ main ]
 jobs:
-  deploy-test-1:
+  build-deploy:
     runs-on: ubuntu-latest
-   steps:
+    steps:
       - uses: actions/checkout@v2
       - run: npm test
       - uses: acesarfl@everis.nttdata.com/heroku-deploy@master
